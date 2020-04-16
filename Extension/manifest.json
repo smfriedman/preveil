@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+
+  "name": "Preveil",
+  "description": "Stay informed, not afraid",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["blur.css"],
+      "js": ["blocker.js"]
+    }
+  ],
+
+  "background" : {
+    "scripts" : ["popup.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "Resources/icon.png"
+
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "http://ec2-54-68-94-207.us-west-2.compute.amazonaws.com/"
+  ],
+  "options_ui":{
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "web_accessible_resources":[
+    "options.html"
+  ]
+}

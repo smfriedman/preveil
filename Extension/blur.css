@@ -1,0 +1,47 @@
+img.safeZoneBlur {
+	filter: blur(20px);
+	pointer-events: none !important;
+}
+
+
+p.safeZoneBlur {
+   color: transparent !important;
+   text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+span.safeZoneBlur {
+   color: transparent !important;
+   text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+p.safeZoneBlur a {
+	color: rgba(0,0,0,0) !important;
+	outline: 0 none !important;
+	-webkit-transition: 400ms ease 100ms !important;
+	-moz-transition: 400ms ease 100ms !important;
+	transition: 400ms ease 100ms !important;
+	text-decoration: none !important;
+}
+
+span.safeZoneBlur a {
+	color: rgba(0,0,0,0) !important;
+	outline: 0 none !important;
+	-webkit-transition: 400ms ease 100ms !important;
+	-moz-transition: 400ms ease 100ms !important;
+	transition: 400ms ease 100ms !important;
+	text-decoration: none !important;
+}
+
+.safeZoneContainer {
+    position: relative;    
+}
+
+.safeZoneLayer {
+   cursor: pointer !important; cursor: hand !important;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   background-color: rgba(0,0,0,0);
+   z-index: 2500;
+
+}

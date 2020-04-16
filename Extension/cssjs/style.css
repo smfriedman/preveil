@@ -1,0 +1,79 @@
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.userMessage{
+	position:fixed;
+	width: 300px;
+	height: 50px;
+	padding: 10px;
+	bottom: 100px;
+	left:0;	
+	right:0;
+	margin: auto;
+	text-align: center;
+	display:none;
+	z-index: 1000000;
+}
+
+.preloader{
+	right:0;
+	left:0;
+	top:0;
+	bottom:0;
+	margin: auto;
+	border-radius: 50%;
+	width:30px;
+	height:30px;
+	position: absolute;
+	border-top: 3px solid gray;
+	border-left: 3px solid gray;
+	-webkit-animation: rotating 1s linear infinite;
+  -moz-animation: rotating 1s linear infinite;
+  -ms-animation: rotating 1s linear infinite;
+  -o-animation: rotating 1s linear infinite;
+  animation: rotating 1s linear infinite;
+}
+#current-month{
+	display: inline-block;
+	min-width: 300px;
+	text-align: center;
+}
+.cal-cel:hover {background-color: rgba(0,0,0,0.05) !important;}
+.cal-cel {height: 100px; width:100px;}
+.cal-day-cell {vertical-align: top;}
+.cal-assignment-button {
+	width: 100%; 
+	padding: 1px; 
+	margin-bottom: 1px; 
+	vertical-align: center;
+	height: 19px;
+}
+.overflow {
+	/*width: 100px;*/
+	max-width: 100px;
+	display: inline-block;
+	margin: 0;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.ellipsis {
+ 	text-overflow: ellipsis;
+
+/* Required for text-overflow to do anything */
+	white-space: nowrap;
+ 	overflow: hidden;
+}
+

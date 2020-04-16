@@ -1,0 +1,35 @@
+    body: { 
+      padding: 10px; 
+    }
+    body div:{
+      margin: 10px;
+    }
+    #enable-check, #degree{
+      float: right;
+    }
+    #enable, #triggers, #degree-wrap, #blur-words-section, #protection-wrap{
+      padding-bottom: 10px;
+      border-bottom: thin solid #c0c1c4;
+    }
+    .select-label{
+      font-weight: bold;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    #protection-wrap input, #protection-wrap label{
+      margin-bottom: 3px;
+    }
+
+    .container1{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column; 
+      width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .group{
+      padding-left: 10px; 
+      padding-right: 10px
+    }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Preveil Options</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="cssjs/bootstrap.css" rel="stylesheet" />
+      <link href="cssjs/options.css" rel="stylesheet" />
+      <link href="cssjs/bootstrap-tagsinput.css" rel="stylesheet" />
+      <script src="cssjs/jquery.js"></script>
+      <script src="cssjs/bootstrap.js"></script>
+      <script src="cssjs/options.js"></script>
+      <script src="cssjs/bootstrap-tagsinput.js"></script>
+   </head>
+   <body>
+      <div id="optionsContainer" class="container1 panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title"><img src="Resources\icon.png" height="30" width="30"/> Preveil Options</h2>
+        </div>
+        <div id="triggers" class="group">
+          <p class="select-label">Filter:</p>
+          <form>
+            <select name="trigger" id="trigger-list">
+
+            </select>
+          </form>
+        </div>
+
+        <div id="degree-wrap" class="group">
+          <p class="select-label">Sensitivity Level:</p>
+            <label for="degree" id="degree-label">Level: </label>
+            <input type="number" min="1" max="100" step="1" value="100" id="degree-text">
+            <input type="range" min="1" max="100" step="1" value="100" id="degree">
+        </div>
+
+        <div id="degree-wrap" class="group">
+          <p class="select-label">Blacklist Words:</p>
+            <input type="text" id="blacklist_words" value="" data-role="tagsinput" />
+        </div>
+
+
+        <div id="protection-wrap" class="group">
+          <p class="select-label">Protection Level:</p>
+          <form>
+            <input type="radio" name="protection" id="diasbled-radio" value="disabled">
+            <label for="disabled-radio">Disable all filtering</label><br>
+            <input type="radio" name="protection" id="click-radio" value="click">
+            <label for="click-radio">View content with a click</label><br>
+            <input type="radio" name="protection" id="full-radio" value="full">
+            <label for="full-radio">Fully blocked</label><br>
+          </form>
+        </div>
+
+        <div id="blur-words-section" class="group">
+          <input type="checkbox" name="blur_words" id="blur_words" /><label class="select-label"> &nbsp&nbspFilter text</label>
+        </div>
+
+        <div id="password-section" class="group">
+          <p class="select-label">Password Protection:</p>
+            <label for="pass" id="pass-label">Password: </label>
+            <input type="password" id="pass" /><br/>
+        </div> <br/>
+        <div class="panel-footer">
+         <input type="button" style="display: flex; margin-left: auto; margin-right: auto;" class="btn btn-info" id="save" value="SAVE"/>
+         </div>
+      </div>
+
+      <div class="modal fade" id="loginModal">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title">Please Enter Password:</h4>
+               </div>
+               <div class="modal-body">
+                  <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input type="password" class="form-control" name="pass" id="login_pass" />    
+                  </div>
+               </div>
+               <div class="modal-footer" style="text-align: center;">     
+                  <input type="submit" class="btn btn-info" id="enter_password" value="ENTER"/>
+               </div>
+            </div><!-- /.modal-content -->
+         </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+   </body>
+</html>
